@@ -26,28 +26,6 @@
  */
 package io.datafx.controller.flow;
 
-import io.datafx.controller.flow.event.AfterFlowActionHandler;
-import io.datafx.controller.flow.event.BeforeFlowActionHandler;
-import io.datafx.controller.flow.event.AfterFlowActionEvent;
-import io.datafx.controller.flow.event.BeforeFlowActionEvent;
-import io.datafx.controller.flow.event.VetoableBeforeFlowActionHandler;
-import io.datafx.controller.util.ActionUtil;
-import io.datafx.core.DataFXUtils;
-import javafx.beans.property.ReadOnlyObjectProperty;
-import javafx.beans.property.ReadOnlyObjectWrapper;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.ButtonBase;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TextField;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
-
 import io.datafx.controller.FxmlLoadException;
 import io.datafx.controller.ViewConfiguration;
 import io.datafx.controller.ViewFactory;
@@ -58,10 +36,24 @@ import io.datafx.controller.flow.action.FlowLink;
 import io.datafx.controller.flow.container.DefaultFlowContainer;
 import io.datafx.controller.flow.context.FlowActionHandler;
 import io.datafx.controller.flow.context.ViewFlowContext;
+import io.datafx.controller.flow.event.*;
+import io.datafx.controller.util.ActionUtil;
 import io.datafx.controller.util.Veto;
 import io.datafx.controller.util.VetoException;
 import io.datafx.controller.util.VetoHandler;
 import io.datafx.core.ExceptionHandler;
+import javafx.beans.property.ReadOnlyObjectProperty;
+import javafx.beans.property.ReadOnlyObjectWrapper;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.Tab;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 import java.util.ResourceBundle;
 import java.util.UUID;

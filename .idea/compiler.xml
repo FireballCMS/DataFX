@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="application-sample" />
+        <module name="datafx-core" />
+        <module name="datafx-featuretoggle" />
+        <module name="datafx-flow" />
+        <module name="datafx-samples" />
+        <module name="datafx-tutorial1" />
+        <module name="datafx-tutorial2" />
+        <module name="datafx-tutorial3" />
+        <module name="datafx-tutorial4" />
+        <module name="datafx-tutorial5" />
+        <module name="datafx-tutorial6" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="application-sample" target="1.8" />
+      <module name="DataFX" target="1.8" />
+      <module name="datafx-core" target="1.8" />
+      <module name="datafx-featuretoggle" target="1.8" />
+      <module name="datafx-flow" target="1.8" />
+      <module name="datafx-samples" target="1.8" />
+      <module name="datafx-tutorial1" target="1.8" />
+      <module name="datafx-tutorial2" target="1.8" />
+      <module name="datafx-tutorial3" target="1.8" />
+      <module name="datafx-tutorial4" target="1.8" />
+      <module name="datafx-tutorial5" target="1.8" />
+      <module name="datafx-tutorial6" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

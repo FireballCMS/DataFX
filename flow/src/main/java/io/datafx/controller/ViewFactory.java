@@ -210,7 +210,8 @@ public class ViewFactory {
      * @param controllerClass the class of the controller that defines the view
      */
     public void showInStage(Stage stage, Class<?> controllerClass) throws FxmlLoadException {
-        Scene myScene = new Scene((Parent) createByController(controllerClass).getRootNode());
+        ViewContext<?> vc = createByController(controllerClass);
+        Scene myScene = new Scene((Parent) vc.getRootNode());
         stage.setScene(myScene);
         stage.show();
     }
